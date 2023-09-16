@@ -1,7 +1,9 @@
 declare module 'athena-express' {
-    import * as aws from 'aws-sdk';
+    import { S3Client } from '@aws-sdk/client-s3';
+    import { AthenaClient } from '@aws-sdk/client-athena';
     interface ConnectionConfigInterface {
-        aws: typeof aws;
+        s3Client: typeof S3Client;
+        athenaClient: typeof AthenaClient,
         s3: string;
         getStats: boolean;
         db: string,
@@ -39,13 +41,14 @@ declare module 'athena-express' {
         NextToken?: string;
         QueryExecutionId?: string;
         catalog?: string;
+        values?: string[]
     }
     type DirectQueryString = string;
     type QueryExecutionId = string;
 
     type OptionalQueryResultsInterface<T> = Partial<QueryResultsInterface<T>> & Pick<QueryResultsInterface<T>, 'QueryExecutionId'>;
     type QueryResult<T> = OptionalQueryResultsInterface<T>;
-    type QueryFunc<T> = (query: QueryObjectInterface|DirectQueryString|QueryExecutionId) => Promise<QueryResult<T>>;
+    type QueryFunc<T> = (query: QueryObjectInterface|DirectQueryString|QueryExecutionId, values?: string[]) => Promise<QueryResult<T>>;
 
     class AthenaExpress<T> {
         public new: (config: Partial<ConnectionConfigInterface>) => any;
