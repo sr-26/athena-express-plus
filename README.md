@@ -12,28 +12,28 @@ This repository is a fork of the original [Athena-Express](https://github.com/gh
 #### Simple configuration
 
 ```javascript
-  const athenaClient = new AthenaClient({ region: "REGION" });
-  const client = new S3Client({ region: "REGION" });
-  const athenaExpressConfig = { 'athenaClient': athenaClient, 's3Client': client, 's3': "s3://my-bucket" };
+  const athena = new Athena({ region: "REGION" });
+  const s3 = new S3({ region: "REGION" });
+  const athenaExpressConfig = { athena, s3, 's3Bucket': "s3://my-bucket" };
   const athenaExpress = new AthenaExpress(athenaExpressConfig);
 ```
 
 
 #### Advance configuration
 
-- Besides the `athenaClient`, `s3Client`, `s3` parameter that is required, you can add any of the following optional parameters below
+- Besides the `athena`, `s3`, `s3Bucket` parameter that is required, you can add any of the following optional parameters below
 
 
 
 ```javascript
-const { AthenaClient } = require("@aws-sdk/client-athena")
-const { S3Client } = require("@aws-sdk/client-s3");
+const { Athena } = require("@aws-sdk/client-athena")
+const { S3 } = require("@aws-sdk/client-s3");
 
 //Example showing all Config parameters.
 const athenaExpressConfig = {
-    s3Client: new S3Client({ region: "REGION"});,  // required
-    athenaClient: new AthenaClient({ region: "REGION"}), // required
-    s3: "s3://mybucketname",  // required
+    s3: new S3({ region: "REGION"});,  // required
+    athena: new Athena({ region: "REGION"}), // required
+    s3Bucket: "s3://mybucketname",  // required
     db: "myDbName", // optional
     workgroup: "myWorkGroupName", // optional
     formatJson: true, // optional
