@@ -1,4 +1,4 @@
-# Athena-Express: Simplifying SQL queries on Amazon Athena (Fork) 
+# Athena-Plus: Enhanced Version of Athena-Express
 ## AWS V3 Architecture Support
 
 This fork of Athena-Express is fully compatible with the AWS V3 architecture, providing seamless integration with the latest AWS services and features. It leverages the AWS SDK v3 for Athena and S3, ensuring optimal performance and reliability when executing SQL queries on Amazon Athena.
