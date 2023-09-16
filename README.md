@@ -9,12 +9,6 @@ This repository is a fork of the original [Athena-Express](https://github.com/gh
 
 ## Setup
 
-### Prerequisites
-
--   You will need either an `IAM Role` (if you're running `athena-plus` on AWS Lambda or AWS EC2) **OR** an `IAM User` with `accessKeyId` and `secretAccessKey` (if you're running `athena-plus` on a standalone NodeJS application)
--   This IAM role/user must have `AmazonAthenaFullAccess` and `AmazonS3FullAccess` policies attached 
-    -   Note: As an alternative to granting `AmazonS3FullAccess` you could granularize and limit write access to a specific `bucket`. Just specify this bucket name during `athena-plus` initialization
-
 #### Simple configuration
 
 ```javascript
