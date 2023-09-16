@@ -11,9 +11,9 @@ This repository is a fork of the original [Athena-Express](https://github.com/gh
 
 ### Prerequisites
 
--   You will need either an `IAM Role` (if you're running `athena-express` on AWS Lambda or AWS EC2) **OR** an `IAM User` with `accessKeyId` and `secretAccessKey` (if you're running `athena-express` on a standalone NodeJS application)
+-   You will need either an `IAM Role` (if you're running `athena-plus` on AWS Lambda or AWS EC2) **OR** an `IAM User` with `accessKeyId` and `secretAccessKey` (if you're running `athena-plus` on a standalone NodeJS application)
 -   This IAM role/user must have `AmazonAthenaFullAccess` and `AmazonS3FullAccess` policies attached 
-    -   Note: As an alternative to granting `AmazonS3FullAccess` you could granularize and limit write access to a specific `bucket`. Just specify this bucket name during `athena-express` initialization
+    -   Note: As an alternative to granting `AmazonS3FullAccess` you could granularize and limit write access to a specific `bucket`. Just specify this bucket name during `athena-plus` initialization
 
 #### Simple configuration
 
@@ -64,7 +64,7 @@ With this fork, we've added support for parameterized queries. Parameterized que
 
 ### Example of Parameterized Query
 
-Here's an example of how to use parameterized queries with Athena-Express:
+Here's an example of how to use parameterized queries with Athena-Plus:
 
 ```javascript
 
@@ -96,7 +96,7 @@ athenaExpress
 
 ```
 
-In this example, we define a query with placeholders ? and provide the actual parameter value in the values array. Athena-Express replaces the placeholders with the parameter values when executing the query.
+In this example, we define a query with placeholders ? and provide the actual parameter value in the values array. Athena-Plus replaces the placeholders with the parameter values when executing the query.
 
 
 ### Getting Started
@@ -104,7 +104,7 @@ To get started with this fork and use parameterized queries, follow the installa
 
 ## Contributors
 
-Sachin Rana
+Sachin
 
 ## License
 
