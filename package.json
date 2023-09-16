@@ -1,7 +1,7 @@
 {
-  "name": "athena-express",
+  "name": "athena-plus",
   "version": "8.0.0",
-  "description": "Athena-Express makes it easier to execute SQL queries on Amazon Athena by consolidating & astracting several methods in the AWS SDK",
+  "description": "Athena-plus makes it easier to execute SQL queries on Amazon Athena by consolidating & astracting several methods in the AWS SDK",
   "main": "./lib/index.js",
   "types": "./index.d.ts",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ghdna/athena-express.git"
+    "url": "git+https://github.com/sr-26/athena-express"
   },
   "keywords": [
     "aws",
@@ -26,9 +26,9 @@
   "author": "Gary Arora (https://twitter.com/AroraGary)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ghdna/athena-express/issues"
+    "url": "https://github.com/sr-26/athena-express"
   },
-  "homepage": "https://github.com/ghdna/athena-express#readme",
+  "homepage": "https://github.com/sr-26/athena-express#readme",
   "devDependencies": {
     "@aws-sdk/client-athena": "^3.414.0",
     "@aws-sdk/client-s3": "^3.414.0",
