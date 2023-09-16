@@ -1,4 +1,4 @@
-# Athena-Plus: Enhanced Version of Athena-Express
+# Athena-Express-Plus: Enhanced Version of Athena-Express
 ## AWS V3 Architecture Support
 
 This fork of Athena-Express is fully compatible with the AWS V3 architecture, providing seamless integration with the latest AWS services and features. It leverages the AWS SDK v3 for Athena and S3, ensuring optimal performance and reliability when executing SQL queries on Amazon Athena.
@@ -58,7 +58,7 @@ With this fork, we've added support for parameterized queries. Parameterized que
 
 ### Example of Parameterized Query
 
-Here's an example of how to use parameterized queries with Athena-Plus:
+Here's an example of how to use parameterized queries with Athena-Express-Plus:
 
 ```javascript
 
@@ -90,7 +90,7 @@ athenaExpress
 
 ```
 
-In this example, we define a query with placeholders ? and provide the actual parameter value in the values array. Athena-Plus replaces the placeholders with the parameter values when executing the query.
+In this example, we define a query with placeholders ? and provide the actual parameter value in the values array. Athena-Express-Plus replaces the placeholders with the parameter values when executing the query.
 
 
 ### Getting Started
