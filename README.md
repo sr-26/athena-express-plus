@@ -43,7 +43,8 @@ const athenaExpressConfig = {
     encryption: { EncryptionOption: "SSE_KMS", KmsKey: process.env.kmskey}, // optional
     skipResults: false, // optional
     waitForResults: false, // optional
-    catalog: "hive" //optional
+    catalog: "hive", //optional,
+    flatKeys: false // optional
 };
 
 //Initializing AthenaExpress
@@ -98,7 +99,7 @@ To get started with this fork and use parameterized queries, follow the installa
 
 ## Contributors
 
-Sachin
+Weasely
 
 ## License
 

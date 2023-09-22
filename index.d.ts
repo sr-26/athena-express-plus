@@ -15,7 +15,8 @@ declare module 'athena-express-plus' {
         skipResults: boolean,
         waitForResults: boolean,
         catalog: string,
-        pagination: string
+        pagination: string,
+        flatKeys: boolean
     }
 
     interface QueryResultsInterface<T> {
