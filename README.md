@@ -99,7 +99,7 @@ To get started with this fork and use parameterized queries, follow the installa
 
 ## Contributors
 
-Sachin
+Weasely
 
 ## License
 
