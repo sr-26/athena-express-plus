@@ -1,4 +1,4 @@
-declare module 'athena-express' {
+declare module 'athena-express-plus' {
     import { S3 } from '@aws-sdk/client-s3';
     import { Athena } from '@aws-sdk/client-athena';
     interface ConnectionConfigInterface {
