@@ -197,7 +197,7 @@ console.log(results);
 ```javascript
 "use strict";
 
-const AthenaExpress = require("athena-express"),
+const AthenaExpress = require("athena-express-plus"),
 const athena = new Athena({ region: "REGION" });
 const s3 = new S3({ region: "REGION" });
 const athenaExpressConfig = { athena, s3, 's3Bucket': "s3://my-bucket", getStats: true};
@@ -224,7 +224,7 @@ const athenaExpress = new AthenaExpress(athenaExpressConfig);
 ```javascript
 "use strict";
 
-const AthenaExpress = require("athena-express"),
+const AthenaExpress = require("athena-express-plus"),
 const athena = new Athena();
 const s3 = new S3();
 const athenaExpressConfig = { athena, s3, 's3Bucket': "s3://my-bucket", db: "sampledb", getStats: true};
