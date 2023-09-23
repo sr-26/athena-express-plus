@@ -366,7 +366,7 @@ athenaExpress
 
 ```
 
-In this example, we define a query with placeholders ? and provide the actual parameter value in the values array. Athena-Express-Plus replaces the placeholders with the parameter values when executing the query.
+In this example, we define a query with placeholders ? and provide the actual parameter value (string) in the values array.
 
 
 ### Getting Started
