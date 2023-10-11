@@ -65,7 +65,7 @@ const athenaExpress = new AthenaExpress(athenaExpressConfig);
 
 #### Advance configuration
 
-- Besides the `athena`, `s3`, `s3Bucket` parameter that is required, you can add any of the following optional parameters below
+- Besides the `athena`, `s3` parameter that is required, you can add any of the following optional parameters below
 
 
 
@@ -77,7 +77,7 @@ const { S3 } = require("@aws-sdk/client-s3");
 const athenaExpressConfig = {
     s3: new S3({ region: "REGION" }),  // required
     athena: new Athena({ region: "REGION" }), // required
-    s3Bucket: "s3://mybucketname",  // required
+    s3Bucket: "s3://mybucketname",  // (optional) in case query result location already specified in workgroup
     db: "myDbName", // optional
     workgroup: "myWorkGroupName", // optional
     formatJson: true, // optional
