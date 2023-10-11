@@ -1,7 +1,7 @@
 {
   "name": "athena-express-plus",
-  "version": "8.0.6",
-  "description": "athena-express-plus makes it easier to execute SQL queries on Amazon Athena by consolidating & astracting several methods in the AWS SDK",
+  "version": "8.0.7",
+  "description": "Athena-Express-Plus is a Node.js library for simplified SQL query execution in Amazon Athena, supporting the latest AWS SDK v3 architecture. It provides seamless integration with Athena, enabling clean JSON result retrieval, parameterized queries, and pagination",
   "main": "./lib/index.js",
   "types": "./index.d.ts",
   "scripts": {
@@ -21,9 +21,26 @@
     "web",
     "services",
     "sql",
-    "database"
+    "database",
+    "amazon athena",
+    "athena express",
+    "sql queries",
+    "aws sdk",
+    "node.js library",
+    "serverless",
+    "data analysis",
+    "parameterized queries",
+    "pagination",
+    "json results",
+    "data warehousing",
+    "aws integration",
+    "serverless sql",
+    "aws lambda",
+    "query execution",
+    "data querying",
+    "aws services"
   ],
-  "author": "Gary Arora (https://twitter.com/AroraGary)",
+  "author": "Weasely",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sr-26/athena-express-plus"
