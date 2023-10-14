@@ -374,7 +374,9 @@ To get started with this fork and use parameterized queries, follow the installa
 
 ## Contributors
 
-Weasely
+Thanks to the following people who have contributed to this project.
+
+![GitHub contributors](https://contrib.rocks/image?repo=sr-26/athena-express-plus)
 
 ## License
 
