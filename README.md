@@ -56,12 +56,24 @@ This API Gateway then triggers a Lambda function that has the `athena-express-pl
 #### Simple Configuration
 
 ```javascript
+const { Athena } = require("@aws-sdk/client-athena")
+const { S3 } = require("@aws-sdk/client-s3");
 const athena = new Athena({ region: "REGION" });
 const s3 = new S3({ region: "REGION" });
 const athenaExpressConfig = { athena, s3, 's3Bucket': "s3://my-bucket" };
 const athenaExpress = new AthenaExpress(athenaExpressConfig);
 ```
 
+#### Using AthenaClient, S3Client
+
+```javascript
+const { AthenaClient } = require("@aws-sdk/client-athena")
+const { S3Client } = require("@aws-sdk/client-s3");
+const athena = new AthenaClient({ region: "REGION" });
+const s3 = new S3Client({ region: "REGION" });
+const athenaExpressConfig = { athena, s3, 's3Bucket': "s3://my-bucket" };
+const athenaExpress = new AthenaExpress(athenaExpressConfig);
+```
 
 #### Advance configuration
 
