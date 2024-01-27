@@ -57,5 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# macOS metadata files
+.DS_Store
+
 example.js
 
