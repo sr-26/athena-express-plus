@@ -1,6 +1,6 @@
 {
   "name": "athena-express-plus",
-  "version": "8.0.11",
+  "version": "8.1.0",
   "description": "Athena-Express-Plus is a Node.js library for simplified SQL query execution in Amazon Athena, supporting the latest AWS SDK v3 architecture. It provides seamless integration with Athena, enabling clean JSON result retrieval, parameterized queries, and pagination",
   "main": "./lib/index.js",
   "types": "./index.d.ts",
