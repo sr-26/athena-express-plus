@@ -101,6 +101,8 @@ const athenaExpressConfig = {
     waitForResults: false, // optional
     catalog: "hive", // optional
     flatKeys: false // optional
+    resultReuse: true // optional
+    resultReuseMaxAge: 100 // optional
 };
 
 // Initializing AthenaExpress
@@ -122,6 +124,8 @@ const athenaExpress = new AthenaExpress(athenaExpressConfig);
 |waitForResults  | boolean | `true` | When low latency is the objective, you can skip waiting for a query to be completed in Athena. Returns `QueryExecutionId`, which you can pass into athena-express-plus later as such: `athenaExpress.query("ab493e66-138f-4b78-a187-51f43fd5f0eb")` <br /> Not to be confused with `skipResults`, which actually waits for the query to be completed before returning `QueryExecutionId` and other stats. `waitForResults` is meant for fire-and-forget kind of operations.  <br />  |
 |catalog  | string | `null` | The catalog to which the query results belong  |
 |flatKeys | boolean | `false` | Don't interpret dots (.) and square brackets in header fields as nested object or array identifiers at all (treat them like regular characters for JSON field identifiers).`To prevent JSON nesting, consider setting the parameter to true.`  |
+|resultReuse  | boolean | `false` | If previous query results can be reused when the query is run  |
+|resultReuseMaxAge  | number | `0` | Specifies, in minutes, the maximum age of a previous query result that athena should consider for reuse  |
 
 
 
