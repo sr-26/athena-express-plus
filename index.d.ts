@@ -1,9 +1,9 @@
 declare module 'athena-express-plus' {
-    import { S3Client } from '@aws-sdk/client-s3';
-    import { AthenaClient } from '@aws-sdk/client-athena';
+    import { S3ClientConfig } from '@aws-sdk/client-s3';
+    import { AthenaClientConfig } from '@aws-sdk/client-athena';
     interface ConnectionConfigInterface {
-        s3: S3Client;
-        athena: AthenaClient;
+        s3: S3ClientConfig;
+        athena: AthenaClientConfig;
         s3Bucket: string;
         getStats: boolean;
         db: string,
